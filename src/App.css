@@ -1,0 +1,133 @@
+/* Task list spacing */
+.task-list {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+/* Card */
+.task-card {
+padding: 16px;
+border: 1px solid #ddd;
+border-radius: 12px;
+background-color: white;
+box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+transition: box-shadow 0.3s ease;
+margin-bottom: 10px;
+width:500px;
+}
+
+.task-card:hover {
+box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Header layout */
+.task-header {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+}
+
+/* Title + description */
+.task-title {
+font-size: 18px;
+font-weight: 600;
+margin: 0;
+}
+
+.task-desc {
+color: #666;
+margin: 4px 0 0 0;
+}
+
+/* Actions */
+.task-actions {
+display: flex;
+gap: 8px;
+align-items: center;
+}
+
+/* Select */
+.status {
+padding: 4px 8px;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
+
+/* Status colors */
+.status.pending {
+background-color: #fef9c3;
+color: #854d0e;
+}
+
+.status.in-progress {
+background-color: #dbeafe;
+color: #1e40af;
+}
+
+.status.completed {
+background-color: #dcfce7;
+color: #166534;
+}
+
+/* Delete button */
+.delete-btn {
+background: none;
+border: none;
+color: #ef4444;
+cursor: pointer;
+font-weight: 500;
+}
+
+.delete-btn:hover {
+color: #b91c1c;
+}
+
+/* Footer */
+.task-footer {
+margin-top: 8px;
+display: flex;
+gap: 16px;
+font-size: 14px;
+}
+
+/* Priority colors */
+.priority.low {
+color: #16a34a;
+}
+
+.priority.medium {
+color: #ca8a04;
+}
+
+.priority.high {
+color: #dc2626;
+}
+
+.due-date {
+color: #6b7280;
+}
+
+.filter{
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.filter-status, .filter-priority{
+  display:flex;
+  flex-direction: column;
+  text-align: left;
+  
+}
+#status, #priority{
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.common{
+  display: flex;
+ flex-direction: column;
+
+ align-items: center;
+ gap: 20px;
+}
