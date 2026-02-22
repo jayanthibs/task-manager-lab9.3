@@ -21,7 +21,7 @@ function TaskItem({ task, onStatusChange, onDelete }: TaskItemProps){
                         <p>{task.description}</p>
                     </div>
                     <div className="task-actions">
-                        <select className="status pending" defaultValue={task.status} onChange={(e)=>handleStatusChange(e)}>
+                        <select className={`status ${task.status}`} defaultValue={task.status} onChange={handleStatusChange}>
                             <option value="pending">Pending</option>
                             <option value="in-progress">In Progress</option>
                             <option value="completed">Completed</option>
@@ -30,7 +30,7 @@ function TaskItem({ task, onStatusChange, onDelete }: TaskItemProps){
                     </div>
                 </div>
                 <div className="task-footer">
-                    <span className="priority low">Priority: {task.priority}</span>
+                    <span className={`priority ${task.priority}`}>Priority: {task.priority}</span>
                     <span className="due-date">Due: {task.dueDate}</span>
                 </div>
             </div>
@@ -39,4 +39,4 @@ function TaskItem({ task, onStatusChange, onDelete }: TaskItemProps){
     )
 }
 
-export { TaskItem }
+export { TaskItem };

@@ -6,7 +6,9 @@
 //   }) => void;
 // }
 import type { TaskFilterProps, TaskStatus } from "../../types";
+
 function TaskFilter({ onFilterChange }: TaskFilterProps) {
+
   function handleStatusChange(e: React.ChangeEvent<HTMLSelectElement>) {
     onFilterChange({ status: e.target.value as TaskStatus });
   }
