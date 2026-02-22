@@ -11,7 +11,7 @@ npm install
 npm run dev
 ````
 
-##Components Overview
+## Components Overview
 
 #### TaskList
 
@@ -23,11 +23,11 @@ npm run dev
 
 * Represents a single task card.
 * Shows:
- - Task title and description
- - Status dropdown to change task state
- - Delete button
- - Task priority and due date
- - Updates the parent via onStatusChange and onDelete.
+  - Task title and description
+  - Status dropdown to change task state
+  - Delete button
+  - Task priority and due date
+  - Updates the parent via onStatusChange and onDelete.
 
 #### TaskFilter
 
